@@ -21,7 +21,15 @@ module Dynamodb
       
       # Constants which holds configuration for extensions. Those should
       # not be modified by the "developer" (this is why they are constants).
+      ALL         = []
+      CONTROLLERS = ActiveSupport::OrderedHash.new
+      ROUTES      = ActiveSupport::OrderedHash.new
+      STRATEGIES  = ActiveSupport::OrderedHash.new
+      URL_HELPERS = ActiveSupport::OrderedHash.new
 
+      # Strategies that do not require user input.
+      NO_INPUT = []
+      
       # True values used to check params
       TRUE_VALUES = [true, 1, '1', 't', 'T', 'true', 'TRUE']
       
