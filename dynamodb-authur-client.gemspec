@@ -5,11 +5,11 @@ require "dynamodb-authur-client/version"
 Gem::Specification.new do |s|
   s.name        = "dynamodb-authur-client"
   s.version     = Dynamodb::Authur::Client::VERSION
-  s.authors     = ["Matthew Moore"]
-  s.email       = ["matt@crowdmob.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Matthew Moore", "Rohen Peterson"]
+  s.email       = ["matt@crowdmob.com", "rohen@crowdmob.com"]
+  s.homepage    = "https://github.com/crowdmob/dynamodb-authur-client"
+  s.summary     = %q{Client-side of the distributed authentication solution for Rails with Warden, using DynamoDB as a session store.}
+  s.description = %q{Client-side of the distributed authentication solution for Rails with Warden, using DynamoDB as a session store.}
 
   s.rubyforge_project = "dynamodb-authur-client"
 
@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  s.add_dependency("warden", "~> 1.1.1")
+  s.add_dependency("railties", "~> 3.1")
 end
