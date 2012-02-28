@@ -1,0 +1,17 @@
+h1. Welcome to the Dynamo DB Authur Client
+
+Reads users and sessions out of Dynamo DB so that this application can use a central app for generating Session tokens and user data.
+
+h2. Installation
+
+To add this into your app's @Gemfile@: 
+
+<pre>
+  gem 'dynamodb-authur-client', :git => 'git@github.com:crowdmob/dynamodb-authur-client.git'
+</pre>
+
+Then run @bundle install@.
+
+h2. Usage
+
+TBD
